@@ -158,8 +158,8 @@ export default function QuizPage() {
 
   return (
     <>
-      <section className="bg-[#0A2463] py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#0A2463] h-[200px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">Equipment Finder</h1>
           <p className="text-blue-200 text-lg max-w-xl">4 questions · 2 minutes · personalized recommendation</p>
         </div>

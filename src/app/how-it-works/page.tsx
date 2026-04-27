@@ -66,8 +66,8 @@ const faqs = [
 export default function HowItWorksPage() {
   return (
     <>
-      <section className="bg-[#0A2463] py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#0A2463] h-[200px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">
             How It Works
           </h1>
@@ -121,7 +121,7 @@ export default function HowItWorksPage() {
 
       {/* Insurance section */}
       <section id="insurance" className="py-[72px] bg-[#F0F7FF]">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-[#0A2463] mb-3">
               Understanding Insurance

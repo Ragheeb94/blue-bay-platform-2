@@ -24,8 +24,8 @@ function ProductsContent() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0A2463] py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#0A2463] h-[200px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">
             Mobility Equipment
           </h1>
@@ -37,7 +37,7 @@ function ProductsContent() {
       </section>
 
       <section className="py-[72px] bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           {/* Category filter */}
           <div className="flex items-center gap-2 flex-wrap mb-10">
             <button

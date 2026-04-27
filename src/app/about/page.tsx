@@ -46,8 +46,8 @@ const competencies = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-[#0A2463] py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#0A2463] h-[200px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">About Blue Bay Mobility</h1>
           <p className="text-blue-200 text-lg max-w-xl">
             22+ years of clinical experience. Part of the Medics Mobility Inc. family. Now serving Southern California.
@@ -96,7 +96,7 @@ export default function AboutPage() {
 
       {/* Core competencies */}
       <section className="py-[72px] bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h2 className="text-3xl font-black text-[#0A2463] mb-10 text-center">Core competencies</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {competencies.map((c) => (
@@ -111,7 +111,7 @@ export default function AboutPage() {
 
       {/* Contact */}
       <section className="py-[72px] bg-[#0A2463]">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl font-black text-white mb-4">Get in touch</h2>

@@ -4,8 +4,8 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export default function WhoWeHelpPage() {
   return (
     <>
-      <section className="bg-[#0A2463] py-10">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#0A2463] h-[200px] flex items-center">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">Who We Help</h1>
           <p className="text-blue-200 text-lg max-w-xl">
             Every person who walks through our door has a different story. Here&apos;s how we serve each one.
@@ -15,7 +15,7 @@ export default function WhoWeHelpPage() {
 
       {/* Patients */}
       <section id="patients" className="py-[72px] bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-5xl mb-4">🧑‍🦽</div>
@@ -80,7 +80,7 @@ export default function WhoWeHelpPage() {
 
       {/* Caregivers */}
       <section id="caregivers" className="py-[72px] bg-[#F0F7FF]">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 bg-white rounded-2xl p-8 shadow-sm">
               <h3 className="font-bold text-[#0A2463] mb-4 text-lg">We take the burden off your plate</h3>
@@ -131,7 +131,7 @@ export default function WhoWeHelpPage() {
 
       {/* Clinicians */}
       <section id="clinicians" className="py-[72px] bg-white">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-5xl mb-4">🩺</div>
