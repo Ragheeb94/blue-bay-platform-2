@@ -46,7 +46,7 @@ const competencies = [
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-[#0A2463] py-[72px]">
+      <section className="bg-[#0A2463] py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">About Blue Bay Mobility</h1>
           <p className="text-blue-200 text-lg max-w-xl">

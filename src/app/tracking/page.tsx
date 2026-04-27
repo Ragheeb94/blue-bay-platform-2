@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { Search, Package, CheckCircle2, Clock, Truck, Home } from "lucide-react";
 
 type TrackingStatus = {
@@ -56,7 +57,7 @@ export default function TrackingPage() {
 
   return (
     <>
-      <section className="bg-[#0A2463] py-[72px]">
+      <section className="bg-[#0A2463] py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">Track Your Order</h1>
           <p className="text-blue-200 text-lg">
@@ -88,6 +89,33 @@ export default function TrackingPage() {
               Try <strong>BBM-2024-001</strong> or <strong>BBM-2024-002</strong> for a demo
             </p>
           </form>
+
+          {/* Haven't started CTA — shown before any search */}
+          {!result && (
+            <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
+              <div className="text-4xl mb-3">📋</div>
+              <h3 className="text-xl font-black text-[#0A2463] mb-2">
+                Haven&apos;t started the process yet?
+              </h3>
+              <p className="text-gray-500 text-sm mb-6 max-w-sm mx-auto">
+                Book a consultation and we&apos;ll walk you through every step — from evaluation to delivery.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link
+                  href="/consultation"
+                  className="inline-flex items-center justify-center bg-[#0A2463] text-white font-bold px-6 py-3 rounded-full hover:bg-[#071A4A] transition-colors"
+                >
+                  Book Consultation
+                </Link>
+                <Link
+                  href="/quiz"
+                  className="inline-flex items-center justify-center border-2 border-[#0A2463] text-[#0A2463] font-bold px-6 py-3 rounded-full hover:bg-[#F0F7FF] transition-colors"
+                >
+                  Take the Equipment Quiz
+                </Link>
+              </div>
+            </div>
+          )}
 
           {result === "not-found" && (
             <div className="bg-white rounded-2xl p-8 text-center shadow-sm">

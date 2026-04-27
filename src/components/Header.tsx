@@ -62,9 +62,9 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-6">
           {/* Products dropdown */}
           <div className="relative" onMouseEnter={() => setProductsOpen(true)} onMouseLeave={() => setProductsOpen(false)}>
-            <button className="flex items-center gap-1 text-gray-700 hover:text-[#0A2463] font-medium transition-colors py-2">
+            <Link href="/products" className="flex items-center gap-1 text-gray-700 hover:text-[#0A2463] font-medium transition-colors py-2">
               Products <ChevronDown size={15} />
-            </button>
+            </Link>
             {productsOpen && (
               <div className="absolute top-full left-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 w-56 z-50">
                 {productLinks.map((l) => (
@@ -78,9 +78,9 @@ export default function Header() {
 
           {/* Who We Help dropdown */}
           <div className="relative" onMouseEnter={() => setHelpOpen(true)} onMouseLeave={() => setHelpOpen(false)}>
-            <button className="flex items-center gap-1 text-gray-700 hover:text-[#0A2463] font-medium transition-colors py-2">
+            <Link href="/who-we-help" className="flex items-center gap-1 text-gray-700 hover:text-[#0A2463] font-medium transition-colors py-2">
               Who We Help <ChevronDown size={15} />
-            </button>
+            </Link>
             {helpOpen && (
               <div className="absolute top-full left-0 bg-white rounded-xl shadow-xl border border-gray-100 py-2 w-52 z-50">
                 {helpLinks.map((l) => (
