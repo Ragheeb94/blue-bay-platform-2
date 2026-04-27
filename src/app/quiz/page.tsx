@@ -252,17 +252,17 @@ export default function QuizPage() {
                 <strong className="text-[#0A2463]">Next step:</strong> Book a free consultation with a certified ATP who will evaluate your needs in detail and confirm the right equipment — and whether insurance will cover it.
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-stretch gap-3">
                 <Link
                   href="/consultation"
-                  className="flex-1 flex items-center justify-center gap-2 bg-[#0A2463] text-white font-bold px-5 py-3.5 rounded-full hover:bg-[#071A4A] transition-colors"
+                  className="flex-1 flex items-center justify-center gap-2 bg-[#0A2463] text-white font-bold px-5 py-3.5 rounded-full hover:bg-[#071A4A] transition-colors text-center min-h-[52px]"
                 >
                   Book Free Consultation <ArrowRight size={16} />
                 </Link>
                 {recommendation.slug && (
                   <Link
                     href={`/products?cat=${recommendation.slug}`}
-                    className="flex-1 flex items-center justify-center gap-2 bg-[#F0F7FF] text-[#0A2463] font-bold px-5 py-3.5 rounded-full hover:bg-blue-100 transition-colors"
+                    className="flex-1 flex items-center justify-center bg-[#F0F7FF] text-[#0A2463] font-bold px-5 py-3.5 rounded-full hover:bg-blue-100 transition-colors text-center min-h-[52px]"
                   >
                     Browse {recommendation.category}
                   </Link>
