@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export default function WhoWeHelpPage() {
   return (
     <>
-      <section className="bg-[#0A2463] py-14">
+      <section className="bg-[#0A2463] py-[72px]">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">Who We Help</h1>
           <p className="text-blue-200 text-lg max-w-xl">

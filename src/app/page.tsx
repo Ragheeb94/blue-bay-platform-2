@@ -121,7 +121,7 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
+        <div className="relative max-w-7xl mx-auto px-4 py-[72px]">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sky-200 text-sm mb-6">
               <span className="w-1.5 h-1.5 bg-sky-400 rounded-full"></span>
