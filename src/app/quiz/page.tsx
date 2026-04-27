@@ -161,7 +161,7 @@ export default function QuizPage() {
       <section className="bg-[#0A2463] py-10">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-4xl lg:text-5xl font-black text-white mb-3">Equipment Finder</h1>
-          <p className="text-blue-200 text-lg">4 questions · 2 minutes · personalized recommendation</p>
+          <p className="text-blue-200 text-lg max-w-xl">4 questions · 2 minutes · personalized recommendation</p>
         </div>
       </section>
 
