@@ -21,7 +21,7 @@ export const products: Product[] = [
     description:
       "The Permobil M3 Corpus is a mid-wheel drive power wheelchair engineered for users who require advanced seating and positioning. With multiple tilt, recline, and leg-rest functions, it enables pressure relief and postural support throughout the day.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80",
+      "https://images.pexels.com/photos/7697838/pexels-photo-7697838.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Mid-wheel drive for tight-turn maneuverability",
       "Power tilt, recline, and elevating leg rests",
@@ -43,7 +43,7 @@ export const products: Product[] = [
     description:
       "The Quickie Q50 R is a rigid-frame manual wheelchair built from aircraft-grade aluminum. Its adjustable geometry allows ATP customization for optimal propulsion efficiency, reducing shoulder strain for daily active users.",
     image:
-      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80",
+      "https://images.pexels.com/photos/8415454/pexels-photo-8415454.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Rigid aircraft-grade aluminum frame",
       "Fully adjustable seat depth, width, and angle",
@@ -65,7 +65,7 @@ export const products: Product[] = [
     description:
       "The TiLite Aero Z is a titanium cross-frame manual wheelchair that delivers exceptional strength-to-weight ratio. Titanium's natural flex absorbs vibration, reducing fatigue on long propulsion days.",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80",
+      "https://images.pexels.com/photos/8415543/pexels-photo-8415543.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Aircraft-grade titanium frame",
       "Cross-brace folding for easy transport",
@@ -87,7 +87,7 @@ export const products: Product[] = [
     description:
       "The ROHO Mosaic uses dry-air cell technology to distribute pressure across the seating surface, protecting skin integrity for users at moderate-to-high risk of pressure injuries. Lightweight and easy to adjust.",
     image:
-      "https://images.unsplash.com/photo-1631815588090-d4bfec5b1b89?w=800&q=80",
+      "https://images.pexels.com/photos/8543059/pexels-photo-8543059.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Dry-air interconnected cell technology",
       "Single valve inflation adjustment",
@@ -109,7 +109,7 @@ export const products: Product[] = [
     description:
       "The Pride Go-Go Sport is a disassembling travel scooter designed for users who need mobility assistance for community outings. It breaks into five lightweight pieces — no tools required — for easy car loading.",
     image:
-      "https://images.unsplash.com/photo-1586105449897-20b5efeb3233?w=800&q=80",
+      "https://images.pexels.com/photos/17764770/pexels-photo-17764770.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Disassembles into 5 pieces without tools",
       "Heaviest piece under 27 lbs",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     description:
       "The Drive Nitro is a featherweight aluminum rollator with large 10\" wheels designed for both indoor and outdoor use. Loop brakes, padded seat, and under-seat storage make it a versatile everyday mobility aid.",
     image:
-      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&q=80",
+      "https://images.pexels.com/photos/19971192/pexels-photo-19971192.jpeg?auto=compress&cs=tinysrgb&w=800",
     features: [
       "Lightweight aluminum frame — under 13 lbs",
       '10" front wheels for outdoor terrain',
