@@ -121,29 +121,25 @@ export default function HomePage() {
             priority
           />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 py-[72px]">
+        <div className="relative max-w-7xl mx-auto px-4 py-10">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-sky-200 text-sm mb-6">
-              <span className="w-1.5 h-1.5 bg-sky-400 rounded-full"></span>
-              Serving Southern California · 22+ years of experience
-            </div>
-            <h1 className="text-4xl lg:text-6xl font-black text-white leading-tight mb-6">
-              The right mobility solution.<br />
-              <span className="text-[#0EA5E9]">Without the runaround.</span>
+            <h1 className="text-3xl lg:text-5xl font-black text-white leading-tight mb-3">
+              Complex Rehab & Mobility Solutions<br />
+              <span className="text-[#0EA5E9]">Backed by Over 22 Years of Proven Expertise</span>
             </h1>
-            <p className="text-xl text-blue-100 mb-8 leading-relaxed max-w-xl">
-              Blue Bay Mobility provides certified evaluations, custom equipment configuration, and handles every step of your insurance — so you can focus on living.
+            <p className="text-base text-blue-100 mb-6 leading-relaxed max-w-2xl">
+              BlueBay Mobility provides custom rehab wheelchairs, power wheelchairs, and professional mobility services expanding into the U.S. from our established Canadian operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/quiz"
-                className="inline-flex items-center justify-center gap-2 bg-[#0EA5E9] text-white font-bold px-7 py-4 rounded-full text-base hover:bg-sky-400 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#0EA5E9] text-white font-bold px-6 py-3 rounded-full text-sm hover:bg-sky-400 transition-colors"
               >
-                Find My Equipment <ArrowRight size={18} />
+                Find My Equipment <ArrowRight size={16} />
               </Link>
               <Link
                 href="/consultation"
-                className="inline-flex items-center justify-center gap-2 bg-white text-[#0A2463] font-bold px-7 py-4 rounded-full text-base hover:bg-gray-50 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-[#0A2463] font-bold px-6 py-3 rounded-full text-sm hover:bg-gray-50 transition-colors"
               >
                 Book a Free Consultation
               </Link>
