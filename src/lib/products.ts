@@ -9,6 +9,7 @@ export type Product = {
   features: string[];
   idealFor: string;
   insuranceCovered: boolean;
+  waterResistant: boolean;
 };
 
 export const products: Product[] = [
@@ -33,6 +34,7 @@ export const products: Product[] = [
     idealFor:
       "Users with ALS, MS, SCI, or other conditions requiring advanced power seating and significant pressure relief.",
     insuranceCovered: true,
+    waterResistant: false,
   },
   {
     slug: "quickie-q50-r",
@@ -55,6 +57,7 @@ export const products: Product[] = [
     idealFor:
       "Active manual wheelchair users with upper-body strength who need a durable, customized daily-use chair.",
     insuranceCovered: true,
+    waterResistant: true,
   },
   {
     slug: "tilite-aero-z",
@@ -77,6 +80,7 @@ export const products: Product[] = [
     idealFor:
       "Users who travel frequently or need a folding frame, and prioritize minimal weight with long-term durability.",
     insuranceCovered: true,
+    waterResistant: true,
   },
   {
     slug: "roho-cushion",
@@ -99,6 +103,7 @@ export const products: Product[] = [
     idealFor:
       "Wheelchair users at risk of pressure injuries who need reliable daily pressure redistribution.",
     insuranceCovered: true,
+    waterResistant: false,
   },
   {
     slug: "pride-gogo",
@@ -121,6 +126,7 @@ export const products: Product[] = [
     idealFor:
       "Users who retain some walking ability but need scooter support for longer distances and community outings.",
     insuranceCovered: false,
+    waterResistant: false,
   },
   {
     slug: "drive-nitro",
@@ -143,6 +149,7 @@ export const products: Product[] = [
     idealFor:
       "Users who need walking support and prefer a rollator with a seat for rest breaks during community activities.",
     insuranceCovered: true,
+    waterResistant: true,
   },
 ];
 

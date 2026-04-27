@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import { CheckCircle2, ChevronRight, SlidersHorizontal } from "lucide-react";
+import { CheckCircle2, ChevronRight, SlidersHorizontal, Droplets, DropletOff } from "lucide-react";
 import { products, categories } from "@/lib/products";
 import { Suspense } from "react";
 
@@ -40,7 +40,17 @@ function ProductsContent() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Category filter */}
           <div className="flex items-center gap-2 flex-wrap mb-10">
-            <SlidersHorizontal size={16} className="text-gray-400" />
+            <button
+              onClick={() => setActiveCategory("all")}
+              title="Reset filters"
+              className={`p-2 rounded-lg transition-colors ${
+                activeCategory === "all"
+                  ? "bg-[#0A2463] text-white"
+                  : "bg-[#F0F7FF] text-[#0A2463] hover:bg-blue-100"
+              }`}
+            >
+              <SlidersHorizontal size={15} />
+            </button>
             {categories.map((c) => (
               <button
                 key={c.value}
@@ -77,6 +87,20 @@ function ProductsContent() {
                         <CheckCircle2 size={11} /> Insurance Eligible
                       </div>
                     )}
+                    {/* Water resistance badge */}
+                    <div
+                      className={`absolute top-3 right-3 text-xs font-semibold px-2.5 py-1 rounded-full flex items-center gap-1 ${
+                        p.waterResistant
+                          ? "bg-blue-500 text-white"
+                          : "bg-white/80 text-gray-500"
+                      }`}
+                    >
+                      {p.waterResistant ? (
+                        <><Droplets size={11} /> Water Resistant</>
+                      ) : (
+                        <><DropletOff size={11} /> Not Water Resistant</>
+                      )}
+                    </div>
                   </div>
                   <div className="p-5">
                     <p className="text-xs text-[#0EA5E9] font-semibold uppercase tracking-wider mb-1">

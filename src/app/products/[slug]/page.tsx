@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { CheckCircle2, ArrowRight, ChevronLeft, Phone } from "lucide-react";
+import { CheckCircle2, ArrowRight, ChevronLeft, Phone, Droplets, DropletOff } from "lucide-react";
 import { products, getProductBySlug } from "@/lib/products";
 
 export async function generateStaticParams() {
@@ -47,6 +47,19 @@ export default async function ProductPage({
                   <CheckCircle2 size={14} /> Insurance Eligible
                 </div>
               )}
+              <div
+                className={`absolute top-4 right-4 text-sm font-semibold px-3 py-1.5 rounded-full flex items-center gap-1.5 ${
+                  product.waterResistant
+                    ? "bg-blue-500 text-white"
+                    : "bg-white/80 text-gray-500"
+                }`}
+              >
+                {product.waterResistant ? (
+                  <><Droplets size={14} /> Water Resistant</>
+                ) : (
+                  <><DropletOff size={14} /> Not Water Resistant</>
+                )}
+              </div>
             </div>
 
             {/* Details */}
@@ -72,9 +85,31 @@ export default async function ProductPage({
               </ul>
 
               {/* Ideal for */}
-              <div className="bg-[#F0F7FF] rounded-xl p-5 mb-6">
+              <div className="bg-[#F0F7FF] rounded-xl p-5 mb-4">
                 <p className="text-sm font-semibold text-[#0A2463] mb-1">Ideal for</p>
                 <p className="text-sm text-gray-600">{product.idealFor}</p>
+              </div>
+
+              {/* Specs row */}
+              <div className="flex gap-3 mb-6">
+                <div className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold flex-1 justify-center ${
+                  product.waterResistant
+                    ? "bg-blue-50 text-blue-700 border border-blue-200"
+                    : "bg-gray-50 text-gray-500 border border-gray-200"
+                }`}>
+                  {product.waterResistant
+                    ? <><Droplets size={15} /> Water Resistant</>
+                    : <><DropletOff size={15} /> Not Water Resistant</>
+                  }
+                </div>
+                <div className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold flex-1 justify-center ${
+                  product.insuranceCovered
+                    ? "bg-green-50 text-green-700 border border-green-200"
+                    : "bg-gray-50 text-gray-500 border border-gray-200"
+                }`}>
+                  <CheckCircle2 size={15} />
+                  {product.insuranceCovered ? "Insurance Eligible" : "Self-Pay Only"}
+                </div>
               </div>
 
               {/* Insurance */}
